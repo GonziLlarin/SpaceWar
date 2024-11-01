@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Space War</title>
+</head>
+
+<body>
+  <div id="login-container">
+    <h2>Ingrese su nombre</h2>
+    <input type="text" id="username" placeholder="Nombre de usuario" />
+    <button id="start-game">Iniciar Juego</button>
+  </div>
+
+  <span id="lives">Vidas:<i>5</i></span>
+  <span id="times"></span>
+  <span id="score">Puntaje: 0</span>
+  <div class="nave" id="nave"></div>
+
+  <div id="game-over-container" style="display: none;">
+    <h2>Juego Terminado</h2>
+    <p id="final-score"></p>
+    <button id="restart-game">Reiniciar Juego</button>
+  </div>
+
+  <div id="scores-container">
+    <h2>Puntuaciones</h2>
+    <ul id="scores-list">
+      <li>GOnzu: <b>198</b></li>
+    </ul>
+  </div>
+  <div id="credits">
+    <h3>Gonzalo Llarin - Curso js</h3>
+  </div>
+
+  <audio src="audio/laser.mp3" id="laser"></audio>
+  <audio src="audio/explosion.mp3" id="explosion"></audio>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/main3.js"></script>
+</body>
+
+</html>
